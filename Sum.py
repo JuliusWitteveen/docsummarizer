@@ -92,7 +92,7 @@ def is_valid_file_path(path):
     pattern = r'^[a-zA-Z0-9_\-\\/:. ]+$'
     return re.match(pattern, path) and os.path.isfile(path)
 
-def get_api_key(file_path=r'C:\Users\HP\Documents\Python\api_key.txt'):
+def get_api_key(file_path=r'C:\api_key.txt'):
     logging.info("Retrieving API key.")
 
     # Validate the file path
